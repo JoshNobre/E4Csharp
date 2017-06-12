@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E86873D9-E7C6-40DE-A6DF-6C1121E6DB66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E4DataBinding</RootNamespace>
+    <AssemblyName>E4DataBinding</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adresse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adresse.Designer.cs">
+      <DependentUpon>Adresse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorAdresse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorAdresse.Designer.cs">
+      <DependentUpon>BindingNavigatorAdresse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorCategorie.Designer.cs">
+      <DependentUpon>BindingNavigatorCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorClients.Designer.cs">
+      <DependentUpon>BindingNavigatorClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorColis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorColis.Designer.cs">
+      <DependentUpon>BindingNavigatorColis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorCommande.Designer.cs">
+      <DependentUpon>BindingNavigatorCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorEmploye.Designer.cs">
+      <DependentUpon>BindingNavigatorEmploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BindingNavigatorProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindingNavigatorProduit.Designer.cs">
+      <DependentUpon>BindingNavigatorProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Blanche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blanche.Designer.cs">
+      <DependentUpon>Blanche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorie.Designer.cs">
+      <DependentUpon>Categorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colis.Designer.cs">
+      <DependentUpon>Colis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commande.Designer.cs">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E4DataBindingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E4DataBindingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="E4DataBindingDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>E4DataBindingDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employe.Designer.cs">
+      <DependentUpon>Employe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion.Designer.cs">
+      <DependentUpon>gestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produit.Designer.cs">
+      <DependentUpon>Produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Adresse.resx">
+      <DependentUpon>Adresse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorAdresse.resx">
+      <DependentUpon>BindingNavigatorAdresse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorCategorie.resx">
+      <DependentUpon>BindingNavigatorCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorClients.resx">
+      <DependentUpon>BindingNavigatorClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorColis.resx">
+      <DependentUpon>BindingNavigatorColis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorCommande.resx">
+      <DependentUpon>BindingNavigatorCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorEmploye.resx">
+      <DependentUpon>BindingNavigatorEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BindingNavigatorProduit.resx">
+      <DependentUpon>BindingNavigatorProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorie.resx">
+      <DependentUpon>Categorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colis.resx">
+      <DependentUpon>Colis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commande.resx">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employe.resx">
+      <DependentUpon>Employe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion.resx">
+      <DependentUpon>gestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produit.resx">
+      <DependentUpon>Produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="E4DataBindingDataSet.xsc">
+      <DependentUpon>E4DataBindingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="E4DataBindingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E4DataBindingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E4DataBindingDataSet.xss">
+      <DependentUpon>E4DataBindingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="E4DataBindingDataSet1.xsc">
+      <DependentUpon>E4DataBindingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="E4DataBindingDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>E4DataBindingDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="E4DataBindingDataSet1.xss">
+      <DependentUpon>E4DataBindingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
